@@ -15,7 +15,7 @@ export default [
         id: 2,
         img: {
             src: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/c8/7a/76/dessole-holiday-taba.jpg?w=600&h=400&s=1",
-            alt: "Taba"
+            alt: "Taba"git
         },
         title: "Taba",
         country: "Egypt",
