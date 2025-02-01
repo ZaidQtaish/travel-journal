@@ -25,6 +25,7 @@ header > h1 {
 .entry {
   display: flex;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .entry-info {
@@ -57,7 +58,7 @@ header > h1 {
 
 .span-location {
   font-size: 0.8rem;
-  letter-spacing: .16rem;
+  letter-spacing: .10rem;
   margin-right: 10px;
 }
 

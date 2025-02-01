@@ -1,13 +1,25 @@
-import Header from "./components/Header"
-import Entry from "./components/Entry"
+/* eslint-disable react/jsx-key */
+import Header from "./components/Header";
+import Entry from "./components/Entry";
+import data from '../data'
 
 export default function App() {
-    return (
-        <div>
-            <Header />
-            <Entry />
-            <Entry />
-            <Entry />
-        </div>
-    )
+    const entryElements = data.map((entry) =>
+        <Entry
+            img={entry.img}
+            title={entry.title}
+            country={entry.country}
+            googleMapsLink={entry.googleMapsLink}
+            dates={entry.dates}
+            text={entry.text}
+        />
+    );
+  return (
+    <>
+      <Header />
+      <main>
+        {entryElements}
+      </main>
+    </>
+  );
 }
