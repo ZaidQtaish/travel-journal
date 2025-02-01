@@ -1,25 +1,18 @@
-/* eslint-disable react/jsx-key */
 import Header from "./components/Header";
 import Entry from "./components/Entry";
-import data from '../data'
+import data from "../data";
 
 export default function App() {
-    const entryElements = data.map((entry) =>
-        <Entry
-            img={entry.img}
-            title={entry.title}
-            country={entry.country}
-            googleMapsLink={entry.googleMapsLink}
-            dates={entry.dates}
-            text={entry.text}
-        />
-    );
+  const entryElements = data.map((entry) => (
+    <Entry
+      key={entry.id}
+      entry= {entry}
+    />
+  ));
   return (
     <>
       <Header />
-      <main>
-        {entryElements}
-      </main>
+      <main>{entryElements}</main>
     </>
   );
 }
